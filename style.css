@@ -1,0 +1,199 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+.header-menu{
+	margin: 3px;
+}
+.header-menu ul {
+	text-align: center;
+}
+.header-menu ul li {
+	display: inline-block;
+	background-color: #48DBFB;
+
+}
+.header-menu ul li a {
+	display: inline-block;
+	text-decoration: none;
+	padding: 10px;
+    color: black;
+	position: relative; 
+}
+.header-menu ul li a:hover{  
+        background-color: #fff;
+        color: #2FA9CF;
+
+}
+.header-menu ul li a::before {
+	content: "";
+	height: 2px;
+	width: 0;
+	position: absolute;
+	top: 28px;
+	left: 11px;
+	background-color: black;
+	transition: .5s;
+}
+
+.header-menu ul li a:hover::before {
+	width: 71%;
+}
+
+
+
+.banner{
+    background-color:#48DBFB;
+    text-align: center;
+    color: #fff;
+    padding: 80px 0px;
+}
+
+.banner button{
+    padding: 12px 25px;
+    position: relative;
+    z-index:1;
+    color: #f41313;
+    border-radius: 5px;
+    
+}
+.banner button:hover{
+    color:#fff;
+}
+
+.banner button::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0;
+    background-color:#000;
+    top: 0;
+    left: 0;
+    transition:.5s;
+    z-index: -1;
+
+}
+
+.banner button:hover::before{
+    width: 100%;
+}
+
+.gallery{
+    text-align: center;
+}
+
+img{
+    width: 100%;
+    
+}
+.photo{
+    overflow: hidden;
+    display: inline-block;
+}
+
+.photo img{
+    height: 100%;
+    width: 100%;
+    transition: .4s;
+}
+
+.img1 img:hover{
+    transform:rotate(360deg)
+}
+.img2 img:hover{
+    transform:rotate(25deg)
+}
+.img3 img:hover{
+    transform:rotate(-25deg)
+}
+.img4 img:hover{
+    transform:rotate(-25deg)
+}
+.img5 img:hover{
+    transform:rotate(25deg)
+}
+.img6 img:hover{
+    transform:rotate(360deg)
+}
+
+.img7 img:hover{
+    transform:scale(1.2) rotate(10deg)
+}
+.img8 img:hover{
+    transform:scale(1.2) rotate(/10deg)
+}
+
+
+.roted{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+    
+}
+.step{
+    width: 80%;
+    margin: auto;
+}
+
+.step-1 {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 12px 25px;
+    transform: rotate(-40deg);
+    transition: .5s;
+    margin-left: 250px;
+}
+.step-1:hover{
+    transform:rotate(0deg);
+    background-color:green;
+    color:#fff;
+    
+    
+}
+.step-2 {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 12px 25px;
+    transition: .5s;
+    margin-left: 200px;
+}
+
+.step-2:hover{
+    transform:scale(1.2);
+    background-color:green;
+    color:#fff;
+    
+    
+}
+.step-3 {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 12px 25px;
+    transform: rotate(40deg);
+    transition: .5s;
+    margin-left: 691px;
+    margin-left: 200px;
+}
+.step-3:hover{
+    transform:rotate(0deg);
+    background-color:green;
+    color:#fff;
+    
+    
+}
+
+
+
+
+
+ .footer{
+    background-color:#000;
+    text-align: center;
+    padding: 10px 0px;
+    color: #fff;
+    margin-top: 30px;
+ }
